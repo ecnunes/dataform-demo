@@ -8,7 +8,19 @@ config {
   type: "table", // Creates a view in BigQuery. Try changing to "table" instead.
   tags: "table_cenipa_ocorrencia",
   columns: {
-    test: "A description for the test column", // Column descriptions are pushed to BigQuery.
+      codigo_ocorrencia:"",
+  ocorrencia_classificacao:"",
+  ocorrencia_cidade:"",
+  ocorrencia_uf:"",
+  ocorrencia_pais:"",
+  ocorrencia_aerodromo:"",
+  ocorrencia_dia:"",
+  ocorrencia_hora:"",
+  investigacao_aeronave_liberada:"",
+  investigacao_status:"",
+  total_recomendacoes:"",
+  total_aeronaves_envolvidas:"",
+  ocorrencia_saida_pista:"",
   }
 }
 
