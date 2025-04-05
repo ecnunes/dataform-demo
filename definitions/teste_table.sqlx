@@ -7,6 +7,7 @@
 config {
   type: "table", // Creates a view in BigQuery. Try changing to "table" instead.
   tags: "table_cenipa_ocorrencia",
+  schema: "dataform",
   columns: {
       codigo_ocorrencia:"",
   ocorrencia_classificacao:"",
