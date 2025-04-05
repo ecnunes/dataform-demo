@@ -1,0 +1,31 @@
+-- This is an example SQLX file to help you learn the basics of Dataform.
+-- Visit https://cloud.google.com/dataform/docs/sql-workflows for more information on how to configure your SQL workflow.
+
+-- You can delete this file, then commit and push your changes to your repository when you are ready.
+
+-- Config blocks allow you to configure, document, and test your data assets.
+config {
+  type: "table", // Creates a view in BigQuery. Try changing to "table" instead.
+  columns: {
+    test: "A description for the test column", // Column descriptions are pushed to BigQuery.
+  }
+}
+
+-- The rest of a SQLX file contains your SELECT statement used to create the table.
+
+SELECT
+  codigo_ocorrencia,
+  ocorrencia_classificacao,
+  ocorrencia_cidade,
+  ocorrencia_uf,
+  ocorrencia_pais,
+  ocorrencia_aerodromo,
+  ocorrencia_dia,
+  ocorrencia_hora,
+  investigacao_aeronave_liberada,
+  investigacao_status,
+  total_recomendacoes,
+  total_aeronaves_envolvidas,
+  ocorrencia_saida_pista
+FROM
+  crypto-resolver-451921-d3.dataform.cenipa_ocorrencia
