@@ -5,9 +5,12 @@
 
 -- Config blocks allow you to configure, document, and test your data assets.
 config {
-  type: "table", // Creates a view in BigQuery. Try changing to "table" instead.
+  type: "table", // Tipo da criação do objeto no bigquery (table,view,incremental,materialized)
+  name: "cenipa_ocorrencia_raw_trat", //nome da tabela a ser criada no bigquery
+  description: "Dados de ocorrências aeronáuticas da aviação civil brasileira", //Descrição da tabela
   tags: "table_cenipa_ocorrencia",
-  schema: "dataform",
+  schema: "dataform", //datasert onde será criado a tabela/view
+  dependencies: "", //depencias do pipeline
   columns: {
       codigo_ocorrencia:"",
   ocorrencia_classificacao:"",
