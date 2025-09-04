@@ -1,4 +1,3 @@
-```dockerfile
 # Usamos a imagem oficial do Node.js como base
 FROM node:16-slim
 
